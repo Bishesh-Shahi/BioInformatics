@@ -1,13 +1,8 @@
-# DNA Nucleodite files 
+from DNAToolkit import *
+import random
 
-Nucleotides = ["A","U", "G", "U", "T"]
+rndDNAStr = ''.join([random.choice(Nucleotides) for nuc in range(50)])
 
-# Check the sequence to make sure it is in DNA String 
-def validateSeq(dna_seq):
-    tmpSeq = dna_seq.upper()
-    for nuc in tmpSeq:
-        if nuc not in Nucleotides:
-            return False
-        return tmpSeq
+print(validateSeq(rndDNAStr))
 
 
