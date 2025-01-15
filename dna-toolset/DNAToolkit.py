@@ -19,3 +19,4 @@ def countNucFrequency(seq):
 
 
 #Optimized Version to count:    return dict(collections.Counter(seq))
+
