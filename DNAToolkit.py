@@ -1,6 +1,7 @@
 # DNA Nucleodite files 
+import collections
 
-Nucleotides = ["A","U", "G", "U", "T"]
+Nucleotides = ["A", "C", "G", "T"]
 
 # Check the sequence to make sure it is in DNA String 
 def validateSeq(dna_seq):
@@ -15,3 +16,6 @@ def countNucFrequency(seq):
     for nuc in seq:
         tmpFreqDict[nuc] += 1
     return tmpFreqDict
+
+
+#Optimized Version to count:    return dict(collections.Counter(seq))
